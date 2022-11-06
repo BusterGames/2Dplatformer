@@ -31,4 +31,5 @@ focus_mode = 2
 text = "Quit Game"
 flat = false
 
+[connection signal="pressed" from="Control/VBoxContainer/startgame" to="." method="_on_startgame_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/quitgame" to="." method="_on_quitgame_pressed"]

@@ -1,4 +1,4 @@
-extends Node2D
+extends KinematicBody2D
 
 
 # Declare member variables here. Examples:
@@ -14,12 +14,5 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_quitgame_pressed():
-	get_tree().quit() # Replace with function body.
-
-
-
-func _on_startgame_pressed():
-	get_node("/root/Node2D").free() # Replace with function body.
+func _physics_process(delta):
+	pass
