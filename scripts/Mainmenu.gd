@@ -22,4 +22,5 @@ func _on_quitgame_pressed():
 
 
 func _on_startgame_pressed():
-	get_node("/root/Node2D").free() # Replace with function body.
+	get_tree().change_scene("res://scenes/GameLevel.tscn")
+	get_node("/root/Node2D").queue_free()
