@@ -14,17 +14,21 @@ margin_left = 294.0
 margin_top = 100.0
 margin_right = 702.0
 margin_bottom = 508.0
+alignment = 1
 
 [node name="startgame" type="MenuButton" parent="Control/VBoxContainer"]
+margin_top = 182.0
 margin_right = 408.0
-margin_bottom = 20.0
+margin_bottom = 202.0
 text = "Start Game"
+flat = false
 
 [node name="quitgame" type="MenuButton" parent="Control/VBoxContainer"]
-margin_top = 24.0
+margin_top = 206.0
 margin_right = 408.0
-margin_bottom = 44.0
+margin_bottom = 226.0
 focus_mode = 2
 text = "Quit Game"
+flat = false
 
 [connection signal="pressed" from="Control/VBoxContainer/quitgame" to="." method="_on_quitgame_pressed"]
