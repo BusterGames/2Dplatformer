@@ -12,4 +12,17 @@ format = 1
 position = Vector2( 378, 247 )
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 367, 300 )
+position = Vector2( 32, 568 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 568 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 32, 520 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 128, 568 )
+scale = Vector2( 1.5, 1.5 )
