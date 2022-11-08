@@ -1,33 +1,123 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://entity/world/tileBlock.tscn" type="PackedScene" id=1]
 [ext_resource path="res://entity/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://entity/mouseClick.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scripts/GameLevel.gd" type="Script" id=4]
+[ext_resource path="res://scripts/entity/Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://TileMap.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="TileMap" type="TileMap" parent="."]
-format = 1
+[node name="LevelNavigation" type="Navigation2D" parent="."]
+
+[node name="TileMap" parent="LevelNavigation" instance=ExtResource( 6 )]
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 773, 274 )
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 378, 247 )
+position = Vector2( 650, 322 )
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, 568 )
+position = Vector2( 582, 216 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 80, 568 )
+position = Vector2( 420, 162 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Node2D3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, 520 )
+position = Vector2( 474, 162 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Node2D4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 128, 568 )
+position = Vector2( 289, 324 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="MouseSprite" parent="." instance=ExtResource( 3 )]
+
+[node name="Node2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 528, 162 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 528, 216 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 582, 270 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 289, 270 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 289, 216 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 289, 162 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 520, 386 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 466, 364 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 412, 378 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192, 573 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 153, 519 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 788, 488 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 734, 465 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 680, 465 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 662, 573 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 662, 519 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 116, 123 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 149, 63 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 817, 130 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 766, 79 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Node2D25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 734, 27 )
+scale = Vector2( 1.5, 1.5 )
