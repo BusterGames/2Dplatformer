@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/TileMap.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/TileMapNz.tres" type="TileSet" id=1]
 
 [node name="TileMap" type="TileMap"]
 tile_set = ExtResource( 1 )
@@ -9,3 +9,4 @@ cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 show_collision = true
 bake_navigation = true
 format = 1
+tile_data = PoolIntArray( 983093, 29, 0, 1048598, 99, 0, 1048599, 99, 0, 1048600, 99, 0, 1048601, 99, 0, 1048602, 99, 0, 1114139, 99, 0, 1114140, 99, 0, 1114141, 99, 0, 1114142, 99, 0, 1114143, 99, 0, 1114144, 99, 0, 1114145, 99, 0, 1114146, 99, 0, 1114147, 99, 0, 1114148, 99, 0, 1114149, 99, 0, 1114150, 99, 0, 1114151, 99, 0, 1114162, 124, 0, 1114163, 124, 0, 1114164, 125, 0, 1245237, 75, 0, 1245240, 29, 0 )
